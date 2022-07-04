@@ -4,24 +4,26 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Nunito:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../styles/style-tienda.css">
         <title>Tienda - Mascochula</title>
     </head>
   <body>
        <header class="encabezado">
-             <!-- Cabecera del sitio -->
-                <nav>
-                    <ul class="encabezado__lista">
-                        <li class="encabezado__lista__logo"><a href="../index.html"><img src="../imagenes/logo.png" alt="logo"></a></li>
-                        <li class="encabezado__lista__item"> <a href="../index.html">Home</a> </li>
-                        <li class="encabezado__lista__item"> <a href="./quienes-somos.html">Quienes somos</a> </li>
-                        <li class="encabezado__lista__item"> <a href="./ilustraciones.html">Ilustraciones</a> </li>
-                        <li class="encabezado__lista__item"> <a href="./contacto.html">Contacto</a> </li>
-                        <li><img class="encabezado__lista__carro" src="../imagenes/carrito.png" alt="carrito-de-compras"> <a href=""></a></li>
-                    </ul>
-                    
-                </nav>
+            <div class="logo">
+                <a href="../index.html"><img src="../imagenes/logo.png" alt="logo-de-pagina"></a>
+            </div>
+            <nav>
+                <ul class="encabezado__lista">
+                    <li class="encabezado__lista__item"> <a href="../index.html">Home</a> </li>
+                    <li class="encabezado__lista__item"> <a href="./quienes-somos.html">Quienes somos</a> </li>
+                    <li class="encabezado__lista__item"> <a href="./ilustraciones.html">Ilustraciones</a> </li>
+                    <li class="encabezado__lista__item"> <a href="./contacto.html">Contacto</a> </li>
+                    <li><img class="encabezado__lista__carro" src="../imagenes/carrito.png" alt="carrito-de-compras"> <a href=""></a></li>
+                </ul>    
+            </nav>
        </header>
        <main>
             <section class="container" >
@@ -99,17 +101,30 @@
                     </table>
                 </div>
             </section>
+
             <section class="gato">
                 <h2>Familias contentas</h2>
-                <img class="gato__foto" src="../imagenes/foto-gato.jpg" alt="gato">
-                <img class="gato__foto" src="../imagenes/foto-perro.jpg" alt="gato">
-                <img class="gato__foto" src="../imagenes/foto-gato2.jpg" alt="gato">
+                <div class="gato__contenedor">
+                    <div class="gato__contenedor__foto">
+                        <img  src="../imagenes/foto-gato.jpg" alt="gato">
+                    </div>
+                    <div class="gato__contenedor__foto">
+                        <img src="../imagenes/foto-perro.jpg" alt="perro">
+                    </div>
+                    <div class="gato__contenedor__foto">
+                        <img src="../imagenes/foto-gato2.jpg" alt="gato">
+                    </div>
+                </div>
             </section>
+
        </main>
        <footer>
         <div class= "redes">
             <li><a href="https://www.facebook.com/Mascochula" target="_blank" >Facebook|</a></li>
             <li><a href="https://www.instagram.com/mascochula" target="_blank">Instagram</a></li>
+        </div>
+        <div class="whatsapp">
+            <a href="https://web.whatsapp.com/" target="_blank"> <img class="whatsapp__logo" src="../imagenes/whatsapp.png" alt="whatsapp"></a>
         </div>
         <div class="cards">
             <ul class="cards__list">

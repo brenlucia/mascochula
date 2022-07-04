@@ -1,61 +1,74 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap', sans-serif;
 }
 
 body{
-    background-color: rgba(47, 151, 128, 0.301);
-    font-family: 'Nunito', sans-serif; 
+    background: rgb(74,172,151);
+    background: linear-gradient(0deg, rgba(74,172,151,1) 0%, rgb(3, 77, 61) 100%);     
 }
 
-.encabezado__lista{
-    position: relative;
-    width: 100%;
-    height: 100px;
-    background-color: rgb(47, 151, 128);
+.encabezado{
+    background-color:rgb(38, 119, 102);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 85px;
+    padding: 5px 10%;
 }
 
-.encabezado__lista__logo{
-    position: absolute;
-    width: 150px;
+.encabezado .logo{
+    cursor: pointer;
+}
+
+.encabezado .logo img{
     height: 60px;
-    margin: 0 auto;
-    top: 20px;
-    bottom: 15px;
-    left: 15px;
+    width: auto;
+    transition: all 0.3s;
 }
 
-.encabezado__lista__item{
-    position: relative;
+.encabezado .logo img:hover{
+    transform: scale(1.2);
+}
+
+.encabezado .encabezado__lista{
+    list-style: none;
+}
+
+.encabezado .encabezado__lista li{
     display: inline-block;
-    padding: 20px;
-    top: 20px;
-    bottom: 15px;
-    left: 700px;
+    padding: 0 20px;
+}
+
+.encabezado .encabezado__lista li:hover{
+    transform: scale(1.1);
+}
+
+.encabezado .encabezado__lista a{
+    font-size: 700;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.encabezado .encabezado__lista li a:hover{
+    color:rgba(193, 241, 231, 0.747);
 }
 
 .encabezado__lista__carro {
     width: 40px;
-    height: 40px;
-    position: absolute;
-    bottom: 25px;
-    left: 1800px;
-}
-
-.encabezado a{
-    color: whitesmoke;
-}
-
-
-ul{
-    list-style: none;
+    height: 40px; 
 }
 
 h1{
-    text-align: center;
-    color: rgb(47, 151, 128);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: whitesmoke; 
     font-size: 35px;
-    padding: 20px; 
+    padding: 15px;   
+    text-align: center;
     border: 1px solid rgb(47, 151, 128); 
 }
 
@@ -91,42 +104,130 @@ p{
 }
 
 .redes{
-    margin-left: 870px;
-    margin-right: 870px;
-    margin-top: 50px;
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     list-style: none;
-    display: inline-block;    
+    padding: 30px;
 }
 
 .redes a{
-    color: rgb(47, 151, 128);
-    display: inline-block;  
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.redes a:hover{
+    color:rgba(10, 48, 40, 0.788);
+}
+
+
+.whatsapp__logo{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+
+.whatsapp img{
+    width: 60px;
+    height: 60px; 
 }
 
 .cards{
-    position: relative;
-    width: 100%;
-    display: inline-block;
-    margin-left: 0;
+    width: 100%; 
 }
 
-
-.cards__list__image{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;  
-    transform: translate(3300%, -60% );
+.cards__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 20px;
 }
 
 .cards__list__image img{
-    width: 50px;
-    height: 50px; 
+    width: 60px;
+    height: 60px;
+    margin: 15px;
 }
 
 h3{
-    margin-left: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
+    color: whitesmoke;   
+}
+
+@media screen and (max-width:768px){
+    .encabezado{
+        background-color:rgb(38, 119, 102);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 85px;
+        padding: 2px ;
+    }
+       
+    .encabezado .logo img{
+        height: 60px;
+        width: auto;
+        padding: 2px;
+    }
+       
+    .encabezado__lista__carro img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .encabezado .encabezado__lista{
+        list-style: none;
+    }
+    
+    .encabezado .encabezado__lista li{
+        display: inline-block;
+        padding: 0 20px;
+    }
+       
+    .encabezado .encabezado__lista a{
+        font-size: 700;
+        color: whitesmoke;
+        text-decoration: none;
+    } 
+}
+
+@media screen and(max-width:320px){
+    body{
+        background: rgb(1,37,29);
+        background: linear-gradient(0deg, rgba(1,37,29,1) 0%, rgba(74,172,151,1) 100%); 
+    }
+
+    .encabezado{
+        flex-direction: column;
+    }
+      
+    .encabezado .logo img{
+        height: 40px;
+        width: auto;
+    }
+    
+    .encabezado__lista__carro img{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .encabezado .encabezado__lista{
+        list-style: none;
+    }
+    
+    .encabezado .encabezado__lista li{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        padding: 5px;
+    }
+     
+    .encabezado .encabezado__lista a{
+        font-size: 700;
+        color: whitesmoke;
+        text-decoration: none;
+    }
+    
 }

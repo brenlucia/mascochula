@@ -4,27 +4,31 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Nunito:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../styles/style-contacto.css">
         <title> Contacto - Mascochula </title>
     </head>
     <body>
         <header class="encabezado">
-            <!-- Cabecera del sitio -->
+            <div class="logo">
+				<a href="../index.html"><img src="../imagenes/logo.png" alt="logo-de-pagina"></a>
+			</div>
                 <nav>
                     <ul class="encabezado__lista">
-                        <li class="encabezado__lista__logo"><a href="../index.html"><img src="../imagenes/logo.png" alt="logo"></a></li>
                         <li class="encabezado__lista__item"> <a href="../index.html">Home</a> </li>
                         <li class="encabezado__lista__item"> <a href="./quienes-somos.html">Quienes somos</a> </li>
                         <li class="encabezado__lista__item"> <a href="./ilustraciones.html">Ilustraciones</a> </li>
                         <li class="encabezado__lista__item"> <a href="./tienda.html">Tienda</a> </li>
                         <li class="encabezado__lista__carro"><img src="../imagenes/carrito.png" alt="carrito-de-compras"> <a href=""></a></li>
                     </ul>
-                    <h1> ¡Comunicate con nosotros! </h1>
+                    
                 </nav>
         </header> 
        <main>
         <section class="conteiner">
+            <h1> ¡Comunicate con nosotros! </h1>
             <h2>Contacto</h2>
             <div class="box">
                 <form>
@@ -44,18 +48,22 @@
                         <input type="submit" class="boxBoton" id="boton">
                         <input type="reset" class="boxoton" id="boton">
                     </div>
-                </form>
-                <div class="imagenGato">
-                    <img src="../imagenes/ilustracion-contacto.jpg" alt="ilustracion-de-gato" class="imagenGato__ej">
-                </div>
+                </form>    
             </div>
         </section>
+
+        <div class="imagenGato">
+            <img src="../imagenes/ilustracion-contacto.jpg" alt="ilustracion-de-gato" class="imagenGato__ej">
+        </div>
        </main>
         <footer>
             <div class= "redes">
                 <li><a href="https://www.facebook.com/Mascochula" target="_blank" >Facebook|</a></li>
                 <li><a href="https://www.instagram.com/mascochula" target="_blank">Instagram</a></li>
             </div>
+            <div class="whatsapp">
+				<a href="https://web.whatsapp.com/" target="_blank"> <img class="whatsapp__logo" src="../imagenes/whatsapp.png" alt="whatsapp"></a>
+			</div>
             <div class="cards">
                 <ul class="cards__list">
 				    <li class="cards__list__image"><img src="../imagenes/visa.png" alt="visa"></li>
