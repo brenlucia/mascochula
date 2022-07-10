@@ -78,6 +78,11 @@ h1{
 
 .ilus__columna img{
     width: 100%;
+    transition: all 0.3s;
+}
+
+.ilus__columna img:hover{
+    transform: scale(1.05);
 }
 
 .ilus__columna{
@@ -97,7 +102,7 @@ p{
     text-align: center;
     font-size: 22px;
     padding: 5px;
-    color: rgb(160, 255, 234);
+    color: rgba(227, 252, 246, 0.788);
 }
 
 .redes{
