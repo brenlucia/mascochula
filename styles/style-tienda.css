@@ -84,11 +84,11 @@ h1{
 }
 
 .gato__contenedor__foto{
-    margin: 10px;
-    
+    margin: 10px; 
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    
 }
 
 .gato__contenedor__foto img{
