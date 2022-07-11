@@ -12,6 +12,39 @@ body{
 
 .encabezado{
     background-color:rgb(38, 119, 102);
+    min-height: 85px;
+    padding: 5px 10%;
+}
+
+.encabezado .navbar-brand{
+    cursor: pointer; 
+}
+
+.encabezado .navbar-brand img{
+    transition: all 0.3s;
+}
+
+.encabezado .navbar-brand img:hover{
+    transform: scale(1.2);
+}
+
+.navbar-nav .nav-link{
+    color: whitesmoke;
+}
+
+.active{
+    background-color: rgba(206, 231, 226, 0.541);
+    border-radius: 10px;
+}
+
+.nav-link-carro img{
+    width: 40px;
+    height: 40px;
+}
+
+/*
+.encabezado{
+    background-color:rgb(38, 119, 102);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,7 +93,7 @@ body{
     width: 40px;
     height: 40px; 
 }
-
+*/
 h1{
     display: flex;
     flex-direction: row;
@@ -72,35 +105,28 @@ h1{
     border: 1px solid rgb(47, 151, 128); 
 }
 
-.fotos{
-    width: 100%;
-    position: relative;
+.fotos .col-lg-4{
+    margin: 0;
+    padding: 25px;
 }
 
-.fotos__equipo{
-    margin: 0px;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    font-style: oblique;
-    align-items: center;
-    transform: translate(25%, 5% );
+.fotos img{
+    width: 100%;
+    height: 100%;
+}
+
+.fotos img:hover{
+    border: 5px solid #f7f7f7;
 }
 
 p{
-    position: absolute;
     left: 0px;
     bottom: 0px;
     background-color: rgba(255, 255, 255, 0.5);
     width: 100%;
     text-align: center;
     font-size: 25px;
-    padding: 3%;
-}
-
-.fotos__equipo__P{
-    width: 750px;
-    height: 750px;  
+    padding: 2px;
 }
 
 .redes{

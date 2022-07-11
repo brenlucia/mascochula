@@ -13,13 +13,37 @@ body{
 
 .encabezado{
     background-color:rgb(38, 119, 102);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     min-height: 85px;
     padding: 5px 10%;
 }
 
+.encabezado .navbar-brand{
+    cursor: pointer; 
+}
+
+.encabezado .navbar-brand img{
+    transition: all 0.3s;
+}
+
+.encabezado .navbar-brand img:hover{
+    transform: scale(1.2);
+}
+
+.navbar-nav .nav-link{
+    color: whitesmoke;
+}
+
+.active{
+    background-color: rgba(206, 231, 226, 0.541);
+    border-radius: 10px;
+}
+
+.nav-link-carro img{
+    width: 40px;
+    height: 40px;
+}
+
+/*
 .encabezado .logo{
     cursor: pointer;
 }
@@ -61,7 +85,7 @@ body{
 .encabezado .encabezado__lista li a:hover{
     color:rgba(193, 241, 231, 0.747);
 }
-
+*/
 h1{
     display: flex;
     flex-direction: row;
@@ -170,12 +194,12 @@ h1{
 
 .boletin{
     width: 92%;
-    height: 250px;
+    height: 300px;
     background-color: rgba(243, 235, 235, 0.151);
     border-radius: 150px;
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-top: 20px;
+    margin-top: 80px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
