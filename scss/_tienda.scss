@@ -1,17 +1,6 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Asap', sans-serif;
-}
-
-body{
-    background: rgb(74,172,151);
-    background: linear-gradient(0deg, rgba(74,172,151,1) 0%, rgb(3, 77, 61) 100%);     
-}
 
 .encabezado{
-    background-color:rgb(38, 119, 102);
+    background-color:map-get($colores, "color-secundario"); 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,34 +54,36 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: whitesmoke; 
+    color: map-get($colores, "color-principal"); 
     font-size: 35px;
     padding: 15px;   
     text-align: center;
     border: 1px solid rgb(47, 151, 128); 
 }
 
+/*NESTING*/
 .gato{
     width: 100%;
     height: auto; 
-}
 
-.gato__contenedor{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;    
-}
+    &__contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+    }
 
-.gato__contenedor__foto{
-    margin: 10px; 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    
-}
+    &__foto{
+        margin: 10px; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
 
-.gato__contenedor__foto img{
-    width: 80%;
+    img{
+        width: 80%;
+    }
+
 }
 
 .container{
@@ -108,7 +99,7 @@ table{
     background-color:rgb(47, 151, 128);
     text-align: left;
     width: 100%;
-    color: white;
+    color: map-get($colores, "color-principal");
     border-collapse: collapse;
 }
 
@@ -119,7 +110,7 @@ th, td{
 thead{
     background-color:rgb(34, 104, 89);
     border-bottom: solid 5px rgb(20, 61, 52);
-    color: white;
+    color: map-get($colores, "color-principal");
 }
 
 tr:nth-child(even){
@@ -127,7 +118,7 @@ tr:nth-child(even){
 }
 
 tr:hover td{
-    background-color: white;
+    background-color:map-get($colores, "color-principal");
     color: rgb(47, 151, 128);
 }
 
@@ -135,7 +126,7 @@ h2{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: whitesmoke; 
+    color: map-get($colores, "color-principal");
     font-size: 35px;
     padding: 15px;   
     text-align: center;
@@ -151,13 +142,13 @@ h2{
 }
 
 .redes a{
-    color: whitesmoke;
+    color: map-get($colores, "color-principal");
     text-decoration: none;
     font-size: 20px;
 }
 
 .redes a:hover{
-    color:rgba(10, 48, 40, 0.788);
+    color:map-get($colores, "color-hover");
 }
 
 
@@ -192,12 +183,12 @@ h2{
 
 h3{
     margin: 10px;
-    color: whitesmoke;   
+    color:map-get($colores, "color-principal");
 }
 
 @media screen and (max-width:768px){
     .encabezado{
-        background-color:rgb(38, 119, 102);
+        background-color:map-get($colores, "color-secundario"); 
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -227,7 +218,7 @@ h3{
        
     .encabezado .encabezado__lista a{
         font-size: 700;
-        color: whitesmoke;
+        color: map-get($colores, "color-principal");
         text-decoration: none;
     } 
 }
@@ -235,7 +226,7 @@ h3{
 @media screen and(max-width:320px){
     body{
         background: rgb(1,37,29);
-        background: linear-gradient(0deg, rgba(1,37,29,1) 0%, rgba(74,172,151,1) 100%); 
+        background: map-get($colores, "color-background"); 
     }
 
     .encabezado{
@@ -265,7 +256,7 @@ h3{
      
     .encabezado .encabezado__lista a{
         font-size: 700;
-        color: whitesmoke;
+        color: map-get($colores, "color-principal");
         text-decoration: none;
     }
     
