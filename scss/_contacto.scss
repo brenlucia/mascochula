@@ -1,27 +1,16 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Asap', sans-serif;
-}
-
-body{
-    background: rgb(74,172,151);
-    background: linear-gradient(0deg, rgba(74,172,151,1) 0%, rgb(3, 77, 61) 100%);     
-}
-
+@import './base/variables';
 h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: whitesmoke; 
+    color: map-get($colores, "color-principal");
     font-size: 35px;
     padding: 15px; 
     text-align: center;
 }
 
 .encabezado{
-    background-color:rgb(38, 119, 102);
+    background-color:map-get($colores, "color-secundario");
     min-height: 85px;
     padding: 5px 10%;
 }
@@ -39,7 +28,7 @@ h1{
 }
 
 .navbar-nav .nav-link{
-    color: whitesmoke;
+    color: map-get($colores, "color-principal"); 
 }
 
 .active{
@@ -57,9 +46,7 @@ h1{
 }
 
 h2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @extend %flexRowSpaceEvenly;
     color: rgb(99, 172, 156);
     font-size: 35px;
     padding: 10px;  
@@ -83,9 +70,7 @@ h2{
 }
 
 .imagenGato {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @extend %flexRowSpaceEvenly;
     margin: 10px;
     overflow: hidden;
 }
@@ -101,59 +86,16 @@ img:hover{
     transform: scale(1.2);
 }
 
-.redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
+
+.botonEnviar{
+    @include boton (rgba(7, 31, 25, 0.788), whitesmoke);
 }
 
-.redes a{
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 20px;
+.botonReset{
+    @include boton (whitesmoke, rgba(7, 31, 25, 0.788));
 }
 
-.redes a:hover{
-    color:rgba(10, 48, 40, 0.788);
-}
-
-
-.whatsapp__logo{
-    position: fixed;
-    right: 15px;
-    bottom: 15px;
-}
-
-.whatsapp img{
-    width: 60px;
-    height: 60px; 
-}
-
-.cards{
-    width: 100%; 
-}
-
-.cards__list{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    list-style: none;
-    margin: 20px;
-}
-
-.cards__list__image img{
-    width: 60px;
-    height: 60px;
-    margin: 15px;
-}
-
-h3{
-    margin: 10px;
-    color: whitesmoke;   
-}
-
+/*MEDIA*/
 @media screen and (max-width:320px){
     .imagenGato {
         display: flex;

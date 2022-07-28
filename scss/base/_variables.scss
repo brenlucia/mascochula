@@ -5,5 +5,26 @@ $colores:(
     "color-principal": whitesmoke,
     "color-secundario": rgb(38, 119, 102),
     "color-terciario": rgb(25, 78, 66),
-    "color-hover": rgba(10, 48, 40, 0.788)
+    "color-hover": rgba(10, 48, 40, 0.788),
+    "Boton": rgba(7, 31, 25, 0.788)
 );
+
+/*Extends*/
+
+%flexRowSpaceEvenly{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/*Mixins*/
+
+@mixin boton ($bgColor, $textColor){
+    width: fit-content;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: $bgColor;
+    color: $textColor;
+}

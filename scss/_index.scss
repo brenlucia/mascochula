@@ -1,44 +1,5 @@
-body{
-    background: map-get($colores, "color-background-dos");
-    background: map-get($colores, "color-background");
-}
-
-.encabezado{
-    background-color: map-get($colores, "color-secundario"); 
-    min-height: 85px;
-    padding: 5px 10%;
-}
-
-.encabezado .navbar-brand{
-    cursor: pointer; 
-}
-
-.encabezado .navbar-brand img{
-    transition: all 0.3s;
-}
-
-.encabezado .navbar-brand img:hover{
-    transform: scale(1.2);
-}
-
-.navbar-nav .nav-link{
-    color: map-get($colores, "color-principal");
-}
-
-.active{
-    background-color: rgba(206, 231, 226, 0.541);
-    border-radius: 10px;
-}
-
-.nav-link-carro img{
-    width: 40px;
-    height: 40px;
-}
-
 h1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @extend %flexRowSpaceEvenly;
     color: map-get($colores, "color-principal");
     font-size: 40px;
     padding: 15px;
@@ -87,9 +48,7 @@ h1{
 }
 
 .parrafoTitle{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @extend %flexRowSpaceEvenly;
     color: map-get($colores, "color-principal");
     font-size: 35px;
     padding: 15px; 
@@ -108,9 +67,7 @@ h1{
 }
 
 .explicacion__titulo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @extend %flexRowSpaceEvenly;
     color: map-get($colores, "color-principal"); 
     font-size: 35px;
     padding: 15px; 
@@ -125,17 +82,13 @@ h1{
 }
     
 .tituloMayus{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @extend %flexRowSpaceEvenly;
     color: map-get($colores, "color-principal");
     padding: 15px;
 }
 
 .explicacion__fotos__texto{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @extend %flexRowSpaceEvenly;
     color: map-get($colores, "color-principal");
     padding: 10px;
     text-align: center;
@@ -156,17 +109,13 @@ h1{
 } 
 
 .boletin__titulo{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @extend %flexRowSpaceEvenly;
     color: map-get($colores, "color-principal");
     font-size: 35px;
 }
 
 .boletin__texto{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @extend %flexRowSpaceEvenly;
     color: map-get($colores, "color-principal");
     padding: 20px;
     text-align: center;
@@ -174,9 +123,7 @@ h1{
 }
 
 .boletin__texto2{ 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @extend %flexRowSpaceEvenly;
     color: map-get($colores, "color-terciario");
     font-style: italic;
     font-size: 20px;
@@ -184,9 +131,7 @@ h1{
 }
 
 form{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @extend %flexRowSpaceEvenly;
     padding: 20px;
 }
 
@@ -198,53 +143,6 @@ input{
     font-size: 18px;
 }
 
-.redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-    padding: 30px;
-}
-
-.redes a{
-    color: map-get($colores, "color-principal");
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.redes a:hover{
-    color: map-get($colores, "color-hover");
-}
-
-
-.whatsapp__logo{
-    position: fixed;
-    right: 15px;
-    bottom: 15px;
-}
-
-.whatsapp img{
-    width: 60px;
-    height: 60px; 
-}
-
-.cards{
-    width: 100%; 
-}
-
-.cards__list{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    list-style: none;
-    margin: 20px;
-}
-
-.cards__list__image img{
-    width: 60px;
-    height: 60px;
-    margin: 15px;
-}
 
 h4{
     margin: 10px;

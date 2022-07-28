@@ -37,7 +37,7 @@
 
 .encabezado .encabezado__lista a{
     font-size: 700;
-    color: whitesmoke;
+    color: map-get($colores, "color-principal"); 
     text-decoration: none;
 }
 
@@ -258,6 +258,5 @@ h3{
         font-size: 700;
         color: map-get($colores, "color-principal");
         text-decoration: none;
-    }
-    
+    }  
 }
