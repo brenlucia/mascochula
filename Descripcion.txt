@@ -1,15 +1,45 @@
-Agregue estas keywords:
+INDEX
+Keywords: mascochula, ilustraciones, mascotas, tienda, dibujos, perros, gatos, familia, 
+amor, ilustraciones de mascotas, conejos, loros, caballos, tienda de ilustraciones.
 
-mascochula, ilustraciones, mascotas, tienda, dibujos, perros, gatos, familia, amor, ilustraciones de mascotas, 
-conejos, loros, caballos, tienda de ilustraciones, tienda, compra, contacto, presentacion de equipo, quienes
-somos.
+Titulo: Mascochula - Tienda de Ilustraciones 
 
-Los titulos de las diferentes páginas son:
-○ Mascochula - Tienda de Ilustraciones 
-○ Contacto - Mascochula
-○ Ilustraciones - Mascochula
-○ Quienes somos - Mascochula
-○ Tienda - Mascochula
+Descripción: "Tienda de ilustraciones de mascotas ideal para regalar a tu ser querido."
+_______________________________________________________________________
+CONTACTO
 
-Y la descripcion que agregue fue:
-"Tienda de ilustraciones de mascotas ideal para regalar a tu ser querido."
+Keywords: contacto, mascochula, ilustraciones, mascotas, tienda, dibujos, perros, gatos, familia, 
+amor, ilustraciones de mascotas, conejos, loros, caballos, tienda de ilustraciones, mensaje, duda.
+
+Titulo: Contacto - Mascochula
+
+Descripción: "Contacto de la tienda de ilustraciones de mascotas ideal para regalar a tu ser querido."
+__________________________________________________________________________
+ILUSTRACIONES
+
+Keywords: mascochula, ilustraciones, mascotas, tienda, dibujos, perros, gatos, familia, amor, 
+ilustraciones de mascotas, conejos, loros, caballos, tienda de ilustraciones, retrato, fotos.
+
+Titulo: Ilustraciones - Mascochula
+
+Descripción: "Muestras de la tienda de ilustraciones de mascotas ideal para regalar a tu ser querido."
+___________________________________________________________________________
+QUIENES SOMOS
+
+Keywords: mascochula, ilustraciones, mascotas, tienda, dibujos, perros, gatos, familia, amor, 
+ilustraciones de mascotas, conejos, loros, caballos, tienda de ilustraciones, quienes somos, 
+presentacion de equipo.
+
+Titulo: Quienes somos - Mascochula
+
+Descripción: "Presentación de equipo de la tienda de ilustraciones de mascotas ideal para regalar a tu ser querido."
+_______________________________________________________________________________
+TIENDA
+
+Keywords: mascochula, ilustraciones, mascotas, tienda, dibujos, perros, gatos, familia, amor, 
+ilustraciones de mascotas, conejos, loros, caballos, tienda de ilustraciones, tienda, compra, precio
+
+Titulo: Tienda - Mascochula
+
+Descripción: "Tienda de ilustraciones de mascotas ideal para regalar a tu ser querido."
+
