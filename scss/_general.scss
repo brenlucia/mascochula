@@ -62,6 +62,12 @@ body{
     color:rgba(10, 48, 40, 0.788);
 }
 
+.redes ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
 
 .whatsapp__logo{
     position: fixed;

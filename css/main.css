@@ -1,3 +1,4 @@
+/*Map*/
 /*Extends*/
 h1, .parrafoTitle, .explicacion__titulo, .tituloMayus, .explicacion__fotos__texto, .boletin__titulo, .boletin__texto, .boletin__texto2, form, h2, .imagenGato {
   display: flex;
@@ -57,6 +58,12 @@ body {
 
 .redes a:hover {
   color: rgba(10, 48, 40, 0.788); }
+
+.redes ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; }
 
 .whatsapp__logo {
   position: fixed;
@@ -402,6 +409,7 @@ h3 {
     color: whitesmoke;
     text-decoration: none; } }
 
+/*Map*/
 /*Extends*/
 h1, .parrafoTitle, .explicacion__titulo, .tituloMayus, .explicacion__fotos__texto, .boletin__titulo, .boletin__texto, .boletin__texto2, form, h2, .imagenGato {
   display: flex;
