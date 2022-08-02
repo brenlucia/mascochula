@@ -1,66 +1,3 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Asap', sans-serif;
-}
-
-body{
-    background: rgb(74,172,151);
-    background: linear-gradient(0deg, rgba(74,172,151,1) 0%, rgb(3, 77, 61) 100%);     
-}
-
-.encabezado{
-    background-color:rgb(38, 119, 102);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 85px;
-    padding: 5px 10%;
-}
-
-.encabezado .logo{
-    cursor: pointer;
-}
-
-.encabezado .logo img{
-    height: 60px;
-    width: auto;
-    transition: all 0.3s;
-}
-
-.encabezado .logo img:hover{
-    transform: scale(1.2);
-}
-
-.encabezado__lista__carro img{
-    width: 40px;
-    height: 40px;
-}
-
-.encabezado .encabezado__lista{
-    list-style: none;
-}
-
-.encabezado .encabezado__lista li{
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.encabezado .encabezado__lista li:hover{
-    transform: scale(1.1);
-}
-
-.encabezado .encabezado__lista a{
-    font-size: 700;
-    color: whitesmoke;
-    text-decoration: none;
-}
-
-.encabezado .encabezado__lista li a:hover{
-    color:rgba(193, 241, 231, 0.747);
-}
-
 h1{
     display: flex;
     flex-direction: row;
@@ -68,7 +5,6 @@ h1{
     color: whitesmoke; 
     font-size: 40px;
     padding: 15px;
-    border: 1px solid rgb(47, 151, 128); 
 }
 
 .contenedor{
@@ -105,58 +41,6 @@ p{
     color: rgba(227, 252, 246, 0.788);
 }
 
-.redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-    padding: 30px;
-}
-
-.redes a{
-    color: whitesmoke;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.redes a:hover{
-    color:rgba(10, 48, 40, 0.788);
-}
-
-
-.whatsapp__logo{
-    position: fixed;
-    right: 15px;
-    bottom: 15px;
-}
-
-.whatsapp img{
-    width: 60px;
-    height: 60px; 
-}
-
-.cards{
-    width: 100%; 
-}
-
-.cards__list{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    list-style: none;
-    margin: 20px;
-}
-
-.cards__list__image img{
-    width: 60px;
-    height: 60px;
-    margin: 15px;
-}
-
-h3{
-    margin: 10px;
-    color: whitesmoke;   
-}
 
 @media screen and (max-width:768px){
     .encabezado{

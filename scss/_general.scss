@@ -17,16 +17,21 @@ body{
     padding: 5px 10%;
 }
 
-.encabezado .navbar-brand{
+.navbar-brand{
     cursor: pointer; 
 }
 
-.encabezado .navbar-brand img{
+.navbar-brand img{
     transition: all 0.3s;
 }
 
-.encabezado .navbar-brand img:hover{
+.navbar-brand img:hover{
     transform: scale(1.2);
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .navbar-nav .nav-link{
@@ -34,7 +39,7 @@ body{
 }
 
 .active{
-    background-color: rgba(206, 231, 226, 0.541);
+    background-color: map-get($colores, "active"); 
     border-radius: 10px;
 }
 
@@ -44,29 +49,11 @@ body{
 }
 
 /*FOOTER*/
-.redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    list-style: none;
-    padding: 30px;
-}
 
-.redes a{
-    color: map-get($colores, "color-principal"); 
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.redes a:hover{
-    color:rgba(10, 48, 40, 0.788);
-}
-
-.redes ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: map-get($colores, "color-secundario");
 }
 
 .whatsapp__logo{
@@ -78,24 +65,6 @@ body{
 .whatsapp img{
     width: 60px;
     height: 60px; 
-}
-
-.cards{
-    width: 100%; 
-}
-
-.cards__list{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    list-style: none;
-    margin: 20px;
-}
-
-.cards__list__image img{
-    width: 60px;
-    height: 60px;
-    margin: 15px;
 }
 
 h3{

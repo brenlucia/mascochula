@@ -1,102 +1,49 @@
 h1{
     @extend %flexRowSpaceEvenly;
     color: map-get($colores, "color-principal");
-    font-size: 40px;
+    font-size: 100px;
     padding: 15px;
-}
-
-.grid-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: beige;
-    border-radius: 4px;
-    transition: transform 0.3s ease-in-out;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.grid-item:hover{
-    filter: opacity(0.9);
-    transform: scale(1.04);
-}
-
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px,4fr));
-    grid-auto-rows: minmax(200px, auto);
-    gap: 10px;
-    padding: 15px;
-    grid-auto-flow: dense;
-}
-
-.wide{
-    grid-column: span 2;
-}
-
-.tall{
-    grid-row: span 2
 }
 
 .parrafo{
     width: 100%;
-    height: 200px;
-    padding: 10px;
+    height: auto;
+    padding: 80px;
 }
 
-.parrafoTitle{
-    @extend %flexRowSpaceEvenly;
-    color: map-get($colores, "color-principal");
-    font-size: 35px;
-    padding: 15px; 
-}
-
-.parrafoTexto{
-    text-align: center;
-    padding-top: 10px;
-    color: map-get($colores, "color-principal");
-    font-size: 18px;
-}
-    
 .explicacion{
     width: 100%;
-    height: 550px; 
+    height: auto; 
+
+    &__titulo{
+        @extend %flexRowSpaceEvenly;
+        color: map-get($colores, "color-principal"); 
+        font-size: 35px;
+        padding: 15px; 
+        background-color: map-get($colores, "color-terciario");
+    } 
 }
 
-.explicacion__titulo{
-    @extend %flexRowSpaceEvenly;
-    color: map-get($colores, "color-principal"); 
-    font-size: 35px;
-    padding: 15px; 
-}
-
-.explicacion__contenedor{
+.circleFoto{
+    @include box (flex, row, center, center);
     margin: 10px;
     padding: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+    img{
+        max-width: 90%;
+    }
 }
-    
+
 .tituloMayus{
     @extend %flexRowSpaceEvenly;
     color: map-get($colores, "color-principal");
     padding: 15px;
 }
 
-.explicacion__fotos__texto{
-    @extend %flexRowSpaceEvenly;
-    color: map-get($colores, "color-principal");
-    padding: 10px;
-    text-align: center;
-}
-
 .boletin{
+    @include box (block, row, center, center)
     width: 92%;
-    height: 300px;
+    height: auto;
     background-color: rgba(243, 235, 235, 0.151);
     border-radius: 150px;
     padding-top: 30px;
@@ -109,7 +56,7 @@ h1{
 } 
 
 .boletin__titulo{
-    @extend %flexRowSpaceEvenly;
+    @include box (flex, row, center, center)
     color: map-get($colores, "color-principal");
     font-size: 35px;
 }
@@ -142,7 +89,6 @@ input{
     text-align: center;
     font-size: 18px;
 }
-
 
 h4{
     margin: 10px;
