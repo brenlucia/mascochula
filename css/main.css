@@ -464,9 +464,6 @@ h1 {
   max-width: 100%;
   height: 100%; }
 
-/*.fotos img:hover{
-    border: 1px solid #f7f7f7;
-}*/
 .nameInfo {
   color: #267766;
   left: 0px;
@@ -476,6 +473,11 @@ h1 {
   text-align: center;
   font-size: 25px;
   padding: 2px; }
+
+@media screen and (max-width: 768px) {
+  body {
+    background: #01251d;
+    background: linear-gradient(0deg, #01251d 0%, #4aac97 100%); } }
 
 @media screen and (max-width: 320px) {
   body {

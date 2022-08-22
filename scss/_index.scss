@@ -41,7 +41,7 @@ h1{
 }
 
 .boletin{
-    @include box (block, row, center, center)
+    @include box (block, row, center, center);
     width: 92%;
     height: auto;
     background-color: rgba(243, 235, 235, 0.151);
@@ -56,7 +56,7 @@ h1{
 } 
 
 .boletin__titulo{
-    @include box (flex, row, center, center)
+    @include box (flex, row, center, center);
     color: map-get($colores, "color-principal");
     font-size: 35px;
 }

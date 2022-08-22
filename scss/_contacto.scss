@@ -75,13 +75,12 @@ img:hover{
     transform: scale(1.2);
 }
 
-
 .botonEnviar{
     @include boton (rgba(7, 31, 25, 0.788), whitesmoke);
 }
 
 .botonReset{
-    @include boton (whitesmoke, rgba(7, 31, 25, 0.788));
+    @include boton (whitesmoke, rgba(7, 31, 25, 0.788)); 
 }
 
 /*MEDIA*/
@@ -98,3 +97,4 @@ img:hover{
         height: 100%;
     }
 }
+
