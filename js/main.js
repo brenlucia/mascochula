@@ -98,4 +98,3 @@ document.addEventListener("DOMContentLoaded", function () {
     // Mostrar el resultado en una ventana emergente
     alert(`Resultado suma de gatos, perros y conejos: ${resultadoSuma}`);
   });
-  
