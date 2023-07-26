@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Evento para capturar la consulta y aumentar el contador
     document.querySelector(".botonEnviar").addEventListener("click", function () {
       const nameInput = document.getElementById("floatingInput").value.trim();
-      const emailInput = document.getElementById("floatingPassword").value.trim();
+      const emailInput = document.getElementById("floatingEmail").value.trim();
       const messageInput = document.getElementById("floatingTextarea").value.trim();
   
       // Validar que se hayan ingresado datos antes de contar la consulta
@@ -49,14 +49,14 @@ document.addEventListener("DOMContentLoaded", function () {
   
         // Limpiar el formulario después de contar la consulta
         document.getElementById("floatingInput").value = "";
-        document.getElementById("floatingPassword").value = "";
+        document.getElementById("floatingEmail").value = "";
         document.getElementById("floatingTextarea").value = "";
   
-        // Mostrar un mensaje de agradecimiento (puedes usar alert() o console.log())
-        alert("Gracias por dejar tu consulta.");
+        // Mostrar un mensaje de agradecimiento
+        console.log("Gracias por dejar tu consulta.");
       } else {
         // Mostrar un mensaje de error si no se han ingresado todos los datos requeridos
-        alert("Por favor, completa todos los campos antes de enviar la consulta.");
+        console.log("Por favor, completa todos los campos antes de enviar la consulta.");
       }
     });
   
@@ -77,3 +77,4 @@ document.addEventListener("DOMContentLoaded", function () {
   
     console.log(`Porcentaje de consultas registradas: ${porcentaje}%`);
   });
+  
