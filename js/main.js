@@ -23,7 +23,7 @@ function enviarFormulario() {
         mensaje: mensaje
     };
 
-    // Obtener consultas anteriores del localStorage (si existen)
+    // Obtener consultas anteriores del localStorage
     let consultas = JSON.parse(localStorage.getItem('consultas')) || [];
 
     // Agregar la nueva consulta al arreglo
