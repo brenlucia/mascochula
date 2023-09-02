@@ -1,4 +1,4 @@
-// Obtener elementos del DOM
+// Elementos del DOM
 const nombreInput = document.getElementById('floatingInput');
 const emailInput = document.getElementById('floatingEmail');
 const mensajeTextarea = document.getElementById('floatingTextarea');
@@ -7,7 +7,7 @@ const botonReset = document.querySelector('.botonReset');
 const cantidadConsultasSpan = document.getElementById('cantidadConsultas');
 const listaPacientes = document.getElementById('listaPacientes'); // Agregamos un elemento para mostrar la lista de pacientes
 
-// Agregar manejadores de eventos
+// Manejadores de eventos
 botonEnviar.addEventListener('click', enviarFormulario);
 botonReset.addEventListener('click', resetearFormulario);
 
@@ -65,20 +65,20 @@ async function obtenerPacientes() {
 
 // Función para mostrar pacientes en el HTML
 function mostrarPacientes(pacientes) {
-    listaPacientes.innerHTML = ''; // Limpiamos cualquier contenido anterior
+    listaPacientes.innerHTML = ''; 
 
-    // Aquí agregamos pacientes ficticios a la lista de pacientes
+    // Agregar pacientes ficticios a la lista de pacientes
     const paciente1 = document.createElement('li');
     paciente1.textContent = 'Nombre: Juan Perez, Email: juan@example.com';
 
     const paciente2 = document.createElement('li');
     paciente2.textContent = 'Nombre: María García, Email: maria@example.com';
 
-    // Agregamos los pacientes ficticios a la lista
+    // Agregar los pacientes ficticios a la lista
     listaPacientes.appendChild(paciente1);
     listaPacientes.appendChild(paciente2);
 
-    // Luego, agregamos los pacientes reales desde la API
+    // Agregar los pacientes reales desde la API
     pacientes.forEach((paciente) => {
         const li = document.createElement('li');
         li.textContent = `Nombre: ${paciente.name}, Email: ${paciente.email}`;
