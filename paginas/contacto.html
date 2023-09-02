@@ -57,15 +57,15 @@
             <h2>Contacto</h2>
             <div class="input">
                 <div class="form-floating mb-4">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="floatingInput" name="nombre" placeholder="name@example.com">
                     <label for="floatingInput">Nombre y Apellido</label>
                 </div>
                 <div class="form-floating mb-4">
-                    <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
-                    <label for="floatingPassword">Email</label>
+                    <input type="email" class="form-control" id="floatingEmail" name="email" placeholder="name@example.com">
+                    <label for="floatingEmail">Email</label>
                 </div>
                 <div class="form-floating mb-4">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <textarea class="form-control" name="mensaje" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                     <label for="floatingTextarea">Dejanos tu mensaje</label>
                 </div>
 
@@ -74,18 +74,23 @@
                     <button type="button" class="btn btn-lg botonReset">Reset</button>
                 </div>
             </div>
-        </section>
 
-        <section class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="imagenGato">
-                    <img src="../imagenes/ilustracion-contacto.jpg" alt="ilustracion-de-gato" class="imagenGato__ej">
-                </div>
+            <!-- Lista de Pacientes -->
+            <div class="pacientes">
+                <h2>Lista de Pacientes</h2>
+                <ul id="listaPacientes"></ul>
             </div>
+
+            <section class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="imagenGato">
+                        <img src="../imagenes/ilustracion-contacto.jpg" alt="ilustracion-de-gato" class="imagenGato__ej">
+                    </div>
+                </div>
+            </section>
         </section>
-
     </main>
-
+    
     <footer class="footer py-4">
         <div class="container">
             <div class="row align-items-center">
@@ -95,7 +100,6 @@
                         aria-label="Facebook"><i class="fab fa-facebook-f"></i>Facebook</a>
                     <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/mascochula" target="_blank"
                         aria-label="Instagram"><i class="fab fa-facebook-f"></i>Instagram</a>
-
                 </div>
                 <div class="col-lg-4 text-lg-end">
                     <a class="link-light text-decoration-none me-3" href="#!">Privacy Policy</a>
@@ -108,17 +112,16 @@
                 </div>
             </div>
         </div>
+    </footer>
 
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start-btn-light">
-                        <span id="cantidadConsultas">Cantidad de consultas registradas: 0</span>
-                    </div>
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start-btn-light">
+                    <span id="cantidadConsultas">Cantidad de consultas registradas: 0</span>
                 </div>
             </div>
-        </footer>
-        
+        </div>
     </footer>
 
     <script src="../js/main.js"></script>
